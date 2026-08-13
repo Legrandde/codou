@@ -1,4 +1,4 @@
-import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope } from 'react-icons/fa';
+import { FaLinkedin, FaTwitter, FaEnvelope } from 'react-icons/fa';
 import { useTheme } from '../contexts/ThemeContext';
 import { FaFacebook, FaLocationDot } from 'react-icons/fa6';
 import { PhoneCall } from 'lucide-react';
