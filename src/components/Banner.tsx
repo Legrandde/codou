@@ -70,7 +70,7 @@ export default function Banner() {
           variants={itemVariants}
           className="mt-6 max-w-md text-white/85 text-base md:text-lg leading-relaxed"
         >
-          Éducation, inclusion, droits des femmes — Codou Aïcha Faye porte
+          Éducation, inclusion, droits des femmes. je porte porte
           une vision : rapprocher le savoir de chaque élève, chaque
           enseignant, chaque famille, partout au Sénégal.
         </motion.p>
@@ -90,7 +90,7 @@ export default function Banner() {
             className="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-white/60 text-white hover:bg-white/10 font-medium transition-colors"
           >
             <HiOutlineAcademicCap />
-            Découvrir son parcours
+            Découvrir mon parcours
           </a>
         </motion.div>
       </div>

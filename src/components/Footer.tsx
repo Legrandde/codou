@@ -1,7 +1,16 @@
-import { FaLinkedin, FaTwitter, FaEnvelope } from 'react-icons/fa';
+import { FaLinkedin, FaEnvelope } from 'react-icons/fa';
 import { useTheme } from '../contexts/ThemeContext';
 import { FaFacebook, FaLocationDot } from 'react-icons/fa6';
 import { PhoneCall } from 'lucide-react';
+
+const NAV_LINKS = [
+  { href: '#apropos', label: 'À propos' },
+  { href: '#parcours', label: 'Parcours' },
+  { href: '#engagements', label: 'Engagements' },
+  { href: '#impact', label: 'Impact' },
+  { href: '#publications', label: 'Publications' },
+  { href: '#contact', label: 'Contact' },
+];
 
 export default function Footer() {
   const { theme } = useTheme();
@@ -22,13 +31,13 @@ export default function Footer() {
             <h3 className={`text-2xl font-bold mb-4 ${
               theme === 'dark' ? 'text-white' : 'text-gray-900'
             }`}>
-              <span className="text-amber-500">Codou</span> Aicha Faye
+              <span className="text-amber-500">Codou</span> Aïcha Faye
             </h3>
             <p className={`mb-4 ${
               theme === 'dark' ? 'text-gray-400' : 'text-gray-600'
             }`}>
-              Une trajectoire au service de l’humain,
-            de l’éducation et de l’inclusion.
+              Une trajectoire au service de l'humain,
+            de l'éducation et de l'inclusion.
             </p>
             {/* Social Links */}
             <div className="flex gap-4">
@@ -41,7 +50,7 @@ export default function Footer() {
                     ? 'bg-gray-800 hover:bg-gray-700 text-white'
                     : 'bg-white hover:bg-gray-200 text-gray-800'
                 }`}
-                aria-label="GitHub"
+                aria-label="Facebook"
               >
                 <FaFacebook size={20} />
               </a>
@@ -58,19 +67,6 @@ export default function Footer() {
               >
                 <FaLinkedin size={20} />
               </a>
-              <a
-                href="https://twitter.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className={`p-2 rounded-full transition-colors ${
-                  theme === 'dark'
-                    ? 'bg-gray-800 hover:bg-gray-700 text-white'
-                    : 'bg-white hover:bg-gray-200 text-gray-800'
-                }`}
-                aria-label="Twitter"
-              >
-                <FaTwitter size={20} />
-              </a>
             </div>
           </div>
 
@@ -82,96 +78,18 @@ export default function Footer() {
               Liens rapides
             </h4>
             <ul className="space-y-2">
-              <li>
-                <a
-                  href="#accueil"
-                  className={`hover:text-amber-500 transition-colors ${
-                    theme === 'dark' ? 'text-gray-400' : 'text-gray-600'
-                  }`}
-                >
-                  Accueil
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#about"
-                  className={`hover:text-amber-500 transition-colors ${
-                    theme === 'dark' ? 'text-gray-400' : 'text-gray-600'
-                  }`}
-                >
-                  À propos
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#services"
-                  className={`hover:text-amber-500 transition-colors ${
-                    theme === 'dark' ? 'text-gray-400' : 'text-gray-600'
-                  }`}
-                >
-                  Services
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#skills"
-                  className={`hover:text-amber-500 transition-colors ${
-                    theme === 'dark' ? 'text-gray-400' : 'text-gray-600'
-                  }`}
-                >
-                  Compétences
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#parcours"
-                  className={`hover:text-amber-500 transition-colors ${
-                    theme === 'dark' ? 'text-gray-400' : 'text-gray-600'
-                  }`}
-                >
-                  Parcours
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#formation"
-                  className={`hover:text-amber-500 transition-colors ${
-                    theme === 'dark' ? 'text-gray-400' : 'text-gray-600'
-                  }`}
-                >
-                  Formation
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#projets"
-                  className={`hover:text-amber-500 transition-colors ${
-                    theme === 'dark' ? 'text-gray-400' : 'text-gray-600'
-                  }`}
-                >
-                  Projets
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#testimonials"
-                  className={`hover:text-amber-500 transition-colors ${
-                    theme === 'dark' ? 'text-gray-400' : 'text-gray-600'
-                  }`}
-                >
-                  Témoignages
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#contact"
-                  className={`hover:text-amber-500 transition-colors ${
-                    theme === 'dark' ? 'text-gray-400' : 'text-gray-600'
-                  }`}
-                >
-                  Contact
-                </a>
-              </li>
+              {NAV_LINKS.map((link) => (
+                <li key={link.href}>
+                  <a
+                    href={link.href}
+                    className={`hover:text-amber-500 transition-colors ${
+                      theme === 'dark' ? 'text-gray-400' : 'text-gray-600'
+                    }`}
+                  >
+                    {link.label}
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>
 
@@ -192,7 +110,7 @@ export default function Footer() {
               <li className="flex items-center gap-3">
                 <FaEnvelope className="text-amber-500" />
                 <span className={theme === 'dark' ? 'text-gray-400' : 'text-gray-600'}>
-                  codouAichatouFaye@gmail.com
+                  codouaicha.faye@ecolesausenegal.org
                 </span>
               </li>
               <li className="flex items-center gap-3">
@@ -213,7 +131,7 @@ export default function Footer() {
             <p className={`text-sm ${
               theme === 'dark' ? 'text-gray-500' : 'text-gray-600'
             }`}>
-              © {currentYear} . Tous droits réservés.
+              © {currentYear} Codou Aïcha Faye. Tous droits réservés.
             </p>
             <p className={`text-sm ${
               theme === 'dark' ? 'text-gray-500' : 'text-gray-600'

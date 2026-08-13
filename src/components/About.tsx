@@ -39,8 +39,8 @@ export default function About() {
               theme === "dark" ? "text-gray-300" : "text-gray-600"
             }`}
           >
-            Codou Aïcha Faye se définit avant tout par les causes qu'elle
-            choisit de défendre : la cause des femmes, l'éducation, la
+            je me  définis avant tout par les causes je
+            choisis de défendre : la cause des femmes, l'éducation, la
             santé, la protection de l'enfance et la défense des personnes
             les plus vulnérables.
           </p>
@@ -49,9 +49,9 @@ export default function About() {
               theme === "dark" ? "text-gray-300" : "text-gray-600"
             }`}
           >
-            Son engagement ne s'arrête pas aux fonctions qu'elle exerce. Il
+            Mon engagement ne s'arrête pas aux fonctions que  j'exerce. Il
             se prolonge dans ses prises de parole, ses écrits et les
-            combats qu'elle choisit de porter lorsqu'une injustice ou une
+            combats que je choisis de porter lorsqu'une injustice ou une
             situation de vulnérabilité ne peut être passée sous silence.
           </p>
 

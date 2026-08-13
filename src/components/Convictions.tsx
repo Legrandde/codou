@@ -32,7 +32,7 @@ export default function ConvictionSection() {
 
             {/* Titre */}
             <h2
-              className={`font-serif text-5xl md:text-6xl lg:text-7xl leading-[0.92] tracking-tight ${
+              className={`font-serif italic semibold text-5xl md:text-6xl lg:text-7xl leading-[0.92] tracking-tight ${
                 isDark ? "text-white" : "text-gray-950"
               }`}
             >
@@ -93,9 +93,7 @@ export default function ConvictionSection() {
             </div>
           </div>
 
-          {/* ─────────────────────────────
-              IMAGE
-          ───────────────────────────── */}
+         
           <div className="relative">
 
             {/* Petit élément décoratif */}

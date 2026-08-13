@@ -27,7 +27,7 @@ export default function ImpactSection({
           Impact
         </span>
         <h2
-          className={`text-4xl md:text-6xl font-bold mt-3 mb-6 ${
+          className={`font-serif italic text-4xl md:text-6xl semibold mt-3 mb-6 ${
             isDark ? "text-white" : "text-gray-900"
           }`}
         >

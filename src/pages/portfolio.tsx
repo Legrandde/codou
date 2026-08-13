@@ -13,6 +13,8 @@ import ImpactModal from "../components/ImpactModal";
 import { BsWhatsapp } from "react-icons/bs";
 import ConvictionSection from "../components/Convictions";
 import Footer from "../components/Footer";
+import Contact from "../components/Contact";
+import Publications from "../components/Publications";
 
 
 
@@ -168,6 +170,13 @@ export default function Portfolio() {
         transition={fadeUpTransition}
       >
         <ConvictionSection />
+      </motion.div>
+      <motion.div variants={fadeUpVariants} initial="hidden" whileInView="visible" viewport={{ once: true }} transition={fadeUpTransition}>
+        <Publications />
+      </motion.div>
+
+      <motion.div initial={{ opacity: 0, scale: 0.97 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}>
+        <Contact />
       </motion.div>
 
        <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ duration: 0.5 }}>

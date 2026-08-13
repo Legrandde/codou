@@ -20,7 +20,7 @@ export default function ImpactCard({ impact, onClick }: ImpactCardProps) {
         <img
           src={impact.mainImage}
           alt={impact.title}
-          className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+          className="w-full font-serif italic h-full object-cover transition-transform duration-700 group-hover:scale-105"
         />
       </div>
 
@@ -31,7 +31,7 @@ export default function ImpactCard({ impact, onClick }: ImpactCardProps) {
         </span>
 
         <h3
-          className={`text-3xl md:text-4xl font-bold mb-5 ${
+          className={`text-3xl font-serif italic md:text-4xl semibold mb-5 ${
             isDark ? "text-white" : "text-gray-900"
           }`}
         >

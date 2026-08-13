@@ -110,7 +110,7 @@ export default function Parcours() {
               theme === 'dark' ? 'text-white' : 'text-gray-900'
             }`}
           >
-            Son parcours,
+            Mon parcours,
             <br />
             étape par étape
           </h2>
@@ -173,7 +173,7 @@ export default function Parcours() {
                       {exp.period}
                     </h3>
                     <p className="text-amber-500 font-semibold mb-2">
-                      {exp.title} — {exp.company}
+                      {exp.title}  {exp.company}
                     </p>
                     <p
                       className={

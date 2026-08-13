@@ -18,7 +18,7 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50 w-full">
-      <div className="flex p-4 w-full items-center justify-around max-w-7xl mx-auto">
+      <div className="font-serif italic flex p-4 w-full items-center justify-around max-w-7xl mx-auto">
         <h1
           className={`text-xl ${
             theme === "dark" ? "text-white" : "text-gray-900"
