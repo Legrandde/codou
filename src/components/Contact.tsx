@@ -53,7 +53,7 @@ export default function Contact() {
             theme === "dark" ? "text-gray-400" : "text-gray-600"
           }`}
         >
-          Une question, une collaboration, une invitation à échanger — le
+          Une question, une collaboration, une invitation à échanger. Le
           plus simple est encore d'écrire ou d'appeler directement.
         </p>
 
